@@ -40,8 +40,7 @@ let package = Package(
             name: "CoreStore",
             dependencies: [],
             path: "Sources",
-            exclude: ["CoreStoreBridge.h", "CoreStoreBridge.m"],
-            cSettings: [.define("NS_BLOCK_ASSERTIONS", to: "1", .when(configuration: .debug))]
+            exclude: ["CoreStoreBridge.h", "CoreStoreBridge.m"]
         ),
         .testTarget(
             name: "CoreStoreTests",

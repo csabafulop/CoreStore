@@ -107,7 +107,7 @@ public final class DefaultLogger: CoreStoreLogger {
                 return
             }
             Swift.print("❗ [CoreStore: Assertion Failure] \((String(describing: fileName) as NSString).lastPathComponent):\(lineNumber) \(functionName)\n  ↪︎ \(message())\n")
-            Swift.fatalError(file: fileName, line: UInt(lineNumber))
+//            Swift.fatalError(file: fileName, line: UInt(lineNumber))
         #endif
     }
     
